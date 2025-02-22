@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form id="login">
+      <label for="mail">Email</label>
+      <input type="email" id="mail" />
+
+      <label for="pass">Password</label>
+      <input type="password" id="pass" />
+
+      <button>Submit</button>
+    </form>
+
+    <script>
+      const loginf = document.getElementById("login");
+      const mailform = document.getElementById("mail");
+      const passform = document.getElementById("pass");
+
+      loginf = addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
